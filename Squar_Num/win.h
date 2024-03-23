@@ -1,12 +1,7 @@
 #ifndef WIN_H
 #define WIN_H
 
-#include <QtGui>
-#include <QWidget>
-#include <QFrame>
-#include <QLabel>
-#include <QLineEdit>
-#include <QPushButton>
+#include <QtWidgets>
 
 class Win:public QWidget
 {
