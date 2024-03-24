@@ -1,10 +1,7 @@
 #ifndef WIN_H
 #define WIN_H
 
-#include <QtGui>
-#include <QLineEdit>
-#include <QLabel>
-#include<QPushButton>
+#include <QtWidgets>
 
 class Counter:public QLineEdit
 {
@@ -19,8 +16,8 @@ public slots:
     {
         QString str=text();
         int r=str.toInt();
-        if (r!=0 && r%5 ==0) emit tick_signal();
         r++;
+        if (r!=0 && r%5 ==0) emit tick_signal();
         str.setNum(r);
         setText(str);
     }
